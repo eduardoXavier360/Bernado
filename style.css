@@ -51,6 +51,7 @@ body {
     text-align: center;
     z-index: 1;
     animation: fadeIn 1s ease;
+    margin-top: -50px;
 }
 
 .convite h1 {
