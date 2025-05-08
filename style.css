@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Segoe UI", sans-serif;
-    background: #001f3f; /* fundo azul escuro */
+    background: #001f3f;
+    /* fundo azul escuro */
     overflow: hidden;
     min-height: 100vh;
     display: flex;
@@ -14,19 +15,32 @@
     align-items: center;
     padding: 20px;
     position: relative;
-  }
-  
-  /* Estrelas animadas */
-  .estrelas {
+
+    background-image: url('./img/ChatGPT\ Image\ 7\ de\ mai.\ de\ 2025\,\ 23_44_31.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    margin: 0;
+    height: 100vh;
+    /* Faz a altura da página ocupar 100% da altura da janela */
+
+}
+
+/* Estrelas animadas */
+.estrelas {
     position: absolute;
     width: 100%;
     height: 100%;
     background: transparent;
     z-index: 0;
-  }
-  
-  .estrelas::before,
-  .estrelas::after {
+}
+
+.estrelas::before,
+.estrelas::after {
     content: '';
     position: absolute;
     width: 2000px;
@@ -34,22 +48,23 @@
     background: transparent url("https://i.imgur.com/4NJlZgF.png") repeat;
     animation: brilhoEstrelas 60s linear infinite;
     opacity: 0.4;
-  }
-  
-  .estrelas::after {
+}
+
+.estrelas::after {
     animation-direction: reverse;
-  }
-  
-  @keyframes brilhoEstrelas {
+}
+
+@keyframes brilhoEstrelas {
     0% {
-      transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0);
     }
+
     100% {
-      transform: translateY(-100px) translateX(100px);
+        transform: translateY(-100px) translateX(100px);
     }
-  }
-  
-  .convite {
+}
+
+.convite {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
     padding: 30px;
@@ -59,21 +74,21 @@
     text-align: center;
     z-index: 1;
     animation: fadeIn 1s ease;
-  }
-  
-  .convite h1 {
+}
+
+.convite h1 {
     font-size: 24px;
     color: #e94e77;
     margin-bottom: 10px;
-  }
-  
-  .nome {
+}
+
+.nome {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
-  }
-  
-  .mapa {
+}
+
+.mapa {
     display: inline-block;
     margin: 15px 0;
     padding: 12px 20px;
@@ -83,50 +98,50 @@
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s;
-  }
-  
-  .mapa:hover {
+}
+
+.mapa:hover {
     background-color: #d13c68;
-  }
-  
-  .mensagem {
+}
+
+.mensagem {
     margin-top: 20px;
     font-style: italic;
     color: #555;
     font-size: 15px;
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .convite {
-      padding: 20px;
+        padding: 20px;
     }
-  
+
     .convite h1 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .nome {
-      font-size: 18px;
+        font-size: 18px;
     }
-  
+
     .mensagem {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .mapa {
-      padding: 10px 15px;
-      font-size: 14px;
+        padding: 10px 15px;
+        font-size: 14px;
     }
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(15px);
+        opacity: 0;
+        transform: translateY(15px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
