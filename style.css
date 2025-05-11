@@ -16,7 +16,7 @@ body {
     padding: 20px;
     position: relative;
 
-    background-image: url('./img/ChatGPT\ Image\ 7\ de\ mai.\ de\ 2025\,\ 23_44_31.png');
+    background-image: url('./img/BERNADO.png');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     /* Faz com que a imagem cubra toda a tela */
@@ -30,29 +30,9 @@ body {
 
 }
 
-/* Estrelas animadas */
-.estrelas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 0;
-}
 
 
 
-.convite {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 420px;
-    text-align: center;
-    z-index: 1;
-    animation: fadeIn 1s ease;
-    margin-top: -200px;
-}
 
 .convite h1 {
     font-size: 24px;
@@ -68,9 +48,8 @@ body {
 
 .mapa {
     display: inline-block;
-    margin: 15px 0;
-    padding: 12px 20px;
-    background-color: #e94e77;
+  margin-bottom: 250px;
+    background-color: #1c0258;
     color: white;
     text-decoration: none;
     border-radius: 8px;
